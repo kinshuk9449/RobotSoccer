@@ -16,6 +16,14 @@ DEF BALL SoccerBall {
 RobotstadiumSoccerField {
 }
 Robot {
+  children [
+    Emitter {
+      type "infra-red"
+      channel 1
+    }
+  ]
   controller "soccer_referee"
   supervisor TRUE
+}
+DEF RECEIVER_BOT Receiver_Robot {
 }
